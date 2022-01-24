@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,12pt]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\usepackage{fontawesome}
+% \usepackage{titlesec}
+% \titleformat{\section}
+%   {\color{niceblue}}{\color{niceblue}}{0}{}[{\titlerule[0.2pt]}\vspace{0.5em}]
+
+\begin{document}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+\newcommand{\spacebar}{\hspace{0.35em} / \hspace{0.35em}}
+\newcommand{\spacedot}{\hspace{0.25em} $\cdot$ \hspace{0.25em}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+% \lastupdated % Print the Last Updated text at the top right
+
+\namesection{}{Adrian Price-Whelan, Ph.D.}{ % Your name profile or other web address
+    {\large \color{black} astrophysicist \spacebar data scientist \spacebar musician} \\
+    \vspace{0.2em}
+    {\normalsize  
+        \faGithub \, \href{https://github.com/adrn}{adrn} \spacedot  
+        \faLinkedin \,  \href{https://www.linkedin.com/in/adrian-price-whelan-3956a08a/}{apw} \spacedot
+        \faTwitter \,  \href{https://twitter.com/adrianprw}{adrianprw}
+    }
+% \href{http://adrian.pw}{\bf http://adrian.pw} \href{mailto:peter.gray.rasmussen@gmail.com}{peter.gray.rasmussen@gmail.com} 203.313.1337
+}
+
+{\large 
+Astrophysicist by profession, data scientist by passion.\\
+I bring advanced data analysis tools and techniques to astrophysics.
+
+% For cover letter!!!:
+% As an astrophysicist, I perform and lead collaborative research projects that leverage modern statistical techniques to analyze data from large astronomical sky surveys.
+% My core interest is data analysis, which has made my scientific output diverse: while many researchers stick to one field, my skills have led me to lead projects to understand dark matter, galactic dynamics, exoplanets, star formation, and XX.
+
+% As a Data Scientist, our mission is to turn terabytes of data into insights and get a deep understanding of how our people use our apps to impact the product, strategy and direction of Spotify. You will study user behavior, strategic initiatives, content, and new features and bring data and insights into every decision we make. Above all, your work will impact the way the world experiences music.
+
+% - Convey that I work on many projects across disciplines, and am comfortable context-switching
+% - Communication skills! Public outreach (convey complex astrophysics to public), and academic talks
+
+% Anything you've done to indicate you are an independent thinker and that you are curious about data or technical work, and in particular are interested in working with goals of efficiency 
+
+% If you've done a statistical analysis on the side of your favorite basketball team and wrote a blog about it, or you built the backend of a website for some hobby or side project, if I were reading your resume I would definitely want to know about it!
+
+% If you've done private sector work, make sure that's clear and noticeable, since prior history in the private sector means you know what you're signing up for and I'll be much less nervous about the above issues
+
+% "You are capable of tackling very loosely defined problems."
+
+% "You are a communicative person that values building strong relationships with colleagues"
+
+% Accomplishments, not duties!
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education}
+
+\subsection{Ph.D., astrophysics}
+\descript{Columbia University}
+\location{May 2016 | New York, NY}
+
+\sectionspace % Some white space after the section
+
+\subsection{M.Phil., M.A., astrophysics}
+\descript{Columbia University}
+\begin{tighteritemize}
+    \item Relevant courses: 
+    \item \textit{Statistical Machine Learning} 
+    \item \textit{\href{https://github.com/adrn/NYCastroML}{Statistics, Data Mining, and Machine Learning in Astronomy}}
+\end{tighteritemize}
+\location{May 2013 | New York, NY}
+
+\sectionspace % Some white space after the section
+
+\subsection{Honors B.A., physics}
+\descript{New York University}
+\location{May 2010 | New York, NY}
+
+\sectionspace % Some white space after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Expert}
+\begin{tighteritemize}
+    \item Bayesian statistics \& inference
+    \item Data wrangling \& visualization 
+    \item Machine learning methods and interpretation
+    \item Version control systems 
+    \item Python {\footnotesize (pandas, Jupyter, scikit-learn)}
+    \item Git \& GitHub
+    \item Unix
+    \item Continuous integration
+\end{tighteritemize}
+% Bayesian statistics \& inference \\
+% Data wrangling \& visualization \\
+% Machine learning \\
+% Version control systems \\
+% Python {\footnotesize (pandas, Jupyter, scikit-learn)}\\
+% Git \& GitHub \\
+% Unix
+
+\sectionspace % Some white space after the section
+
+\subsection{Comfortable}
+\begin{tighteritemize}
+    \item C, C++
+    \item SQL \& databases
+    \item MPI \& parallelization
+    \item JavaScript {\footnotesize (jQuery, D3)}
+    \item HTML, CSS
+    %{\footnotesize (Travis, CircleCI)}
+\end{tighteritemize}
+
+\sectionspace % Some white space after the section
+
+
+%------------------------------------------------
+% Software dev
+%------------------------------------------------
+
+\section{Software dev}
+
+\subsection{lead developer}
+\href{https://github.com/adrn/astropy}{astropy},
+\href{https://github.com/adrn/gala}{gala},
+\href{https://github.com/adrn/schwimmbad}{schwimmbad}
+
+\sectionspace % Some white space after the section
+
+\subsection{contributor}
+\href{https://github.com/matplotlib/matplotlib}{matplotlib},
+\href{https://github.com/numpy/numpy}{numpy}
+
+\sectionspace % Some white space after the section
+
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+% \section{Links} 
+
+% Github:// \href{https://github.com/pgr-me}{\bf pgr\_me} \\
+% LinkedIn:// \href{https://www.linkedin.com/in/petergrayrasmussen}{\bf petergrayrasmussen} \\
+% Twitter:// \href{https://twitter.com/pgr_me}{\bf @pgr\_me} \\
+
+% \sectionspace % Some white space after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.64\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{Flatiron Institute}
+\descript{| research scientist}
+
+\location{July 2019 – present | New York, NY}
+\vspace{1.5\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Leads collaborative research projects that use modern data analysis methods to make inferences from surveys of billions of stars.
+    \item Supervises 10 graduate student and postdoctoral research projects.
+    \item Typical projects utilize parallel processing (MPI), efficient statistical algorithms, and fast data storage and retrieval.
+    \item Recent project: Formulated and implemented (Python/C) a new Bayesian Monte Carlo sampler for hierarchical inference of binary star properties with a large database of astronomical spectroscopy ($>$700,000 stars).
+    \item Presents research at invited talks ($>$25); communicates astrophysics to public audiences through public outreach, e.g., \href{https://astronomyontap.org/}{Astronomy on Tap}.
+\end{tightitemize}
+
+\sectionspace % Some white space after the section
+
+\runsubsection{Princeton University}
+\descript{| postdoctoral research fellow}
+
+\location{July 2016 – July 2019 | Princeton, NJ}
+% \vspace{1.5\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Supervised undergraduate \& graduate students and strives to foster a communicative and supportive community.
+    \item Advised a graduate student (now research scientist at Cambridge University) to define a new Bayesian model selection method that led to the discovery of many new star clusters using a Python-based data processing pipeline.
+    \item Advised an undergraduate student (now grad. student at Univ. of Washington) to implement a matched filter to search for new galaxies around the Milky Way.
+    % \item Taught applied data science and statistics courses, co-organized a weekly data science seminar series.
+    % \item I have published 50 research papers (15 lead author) in scientific journals.
+    % \item I serve on committees for NASA and the National Optical Astronomy Observatory to rank and fund proposals for telescope time.
+\end{tightitemize}
+
+\sectionspace % Some white space after the section
+
+%------------------------------------------------
+
+\runsubsection{Tenfore Holdings}
+\descript{| consultant (data science)}
+
+\location{November 2014 – December 2015 | New York, NY}
+% \vspace{1.5\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Produced advertising recommendations for `Viagogo' based on inferred user models from user transaction data
+    \item Produced cohort summary statistics and analysis tools for `GameChanger' subscription data
+    \item Advised on math associated with key products for `AGERpoint'
+\end{tightitemize}
+
+\sectionspace % Some white space after the section
+
+%------------------------------------------------
+
+% \runsubsection{Edgar Smith}
+% \descript{| consultant}
+
+% \location{January 2013 – June 2013 | New York, NY}
+% % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightitemize}
+% \item Used Amazon Mechanical Turk to construct a similarity matrix of weaving styles between pairs of Navajo rugs and blankets.
+% \item Developed an interactive D3.js visualization and analysis tool to study the similarity matrix, and present the input images.
+% % \item Resulted in a conference presentation
+% \end{tightitemize}
+
+% \sectionspace % Some white space after the section
+
+%------------------------------------------------
+
+\runsubsection{Instructor}
+\descript{| data science and computing}
+
+\location{July 2011 – present | New York, NY}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Scicoder: summer, week-long workshops
+    \item American Astronomical Society: full-day workshops
+    \item PyData NYC: half-day workshop
+    \item Columbia University: data science seminar series
+    \item Princeton University: data science methods (graduate student course)
+\end{tightitemize}
+
+% \sectionspace % Some white space after the section
+
+%------------------------------------------------
+
+% \runsubsection{Participant}
+% \descript{| hack weeks and hack days}
+
+% \location{2012 – present}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightitemize}
+% \item AAS hack day
+% \item AstroHackWeek (community hack day)
+% \item TODO
+% \end{tightitemize}
+
+% \sectionspace % Some white space after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
