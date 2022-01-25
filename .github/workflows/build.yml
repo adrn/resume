@@ -1,0 +1,39 @@
+name: Build Latex CV
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 5 * * 1"  # every day at 1 AM Eastern
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Install modern fonts
+        run: sudo apt-get install fonts-lmodern
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            apk add make
+            make
+
+      - name: Rearrange files
+        run: |
+          rm .gitignore
+          touch .nojekyll
+          mkdir pdf
+          mv *.pdf pdf/
+
+      - name: Deploy PDF
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./pdf
+          force_orphan: true
