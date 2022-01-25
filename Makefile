@@ -7,8 +7,8 @@ RM_TMP      = ${RM} $(foreach suff, ${TMP_SUFFS}, *.${suff})
 all: build
 
 build: 
-	${LATEX} resume.tex
+	${LATEX} PriceWhelan-resume.tex
 
 clean:
-	${RM_TMP} resume.pdf
+	${RM_TMP} PriceWhelan-resume.pdf
 	rm *~
